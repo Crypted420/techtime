@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm ci
+RUN npm i
 
 # Copy the rest of the application code
 COPY . .
@@ -26,7 +26,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install only production dependencies
-RUN npm ci --production
+RUN npm i --production
 
 # Copy the Next.js build files from the builder stage
 COPY --from=builder /app/.next ./.next
