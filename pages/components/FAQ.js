@@ -1,7 +1,8 @@
 import React from 'react'
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
 import styled from 'styled-components'
-import colors from '../utils/colors'
+import colors from "../../utils/colors";
+
 
 const questions = [
     { question: 'is there a free trial available?', answer: 'high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition. ' },

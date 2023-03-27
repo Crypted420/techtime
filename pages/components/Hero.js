@@ -1,7 +1,6 @@
-import Image from "next/image";
 import { FiArrowUpRight } from "react-icons/fi";
 import styled from "styled-components";
-import colors from "../utils/colors";
+import colors from "../../utils/colors";
 import Header from "./Header";
 
 export default function Home() {

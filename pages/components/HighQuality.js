@@ -6,7 +6,8 @@ import {
   MdDescription,
 } from "react-icons/md";
 import styled from "styled-components";
-import colors from "../utils/colors";
+import colors from "../../utils/colors";
+
 
 const badges = [
   { fadedBg: "#3FA96A33", color: "#3FA96A", text: "Audio Classes" },

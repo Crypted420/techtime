@@ -1,14 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
-import colors from '../utils/colors'
+import colors from "../../utils/colors";
 
-const testimonies = [
-    { comment: "", user: "", pic: "" }
-]
+// ! NOT NEEDD FOR NOW
+// const testimonies = [
+//     { comment: "", user: "", pic: "" }
+// ]
 
 function Testimonial() {
     return (
-        <Container>
+        <Container id='Testimonial'>
             <Header>
                 <h1>What our clients are saying</h1>
                 <p>high-defination video is video of higher resolution and quality than standard definition. while there’s no standard meaning for high definition, generally any standard video image</p>

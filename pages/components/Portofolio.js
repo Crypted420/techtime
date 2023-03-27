@@ -3,7 +3,8 @@ import { RiCastFill } from "react-icons/ri";
 import { FaMoneyBill } from "react-icons/fa";
 import { BsClockFill, BsPeopleFill } from "react-icons/bs";
 import styled from "styled-components";
-import colors from "../utils/colors";
+import colors from "../../utils/colors";
+
 
 const badges = [
   {

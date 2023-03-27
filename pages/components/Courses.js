@@ -3,7 +3,7 @@ import { BsFillStarFill } from "react-icons/bs";
 import { FiClock } from "react-icons/fi";
 import { MdMenuBook } from "react-icons/md";
 import styled from "styled-components";
-import colors from "../utils/colors";
+import colors from "../../utils/colors";
 
 const navs = ["All Categories", "Design", "Development", "Marketing"];
 

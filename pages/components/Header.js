@@ -2,7 +2,6 @@ import React from 'react';
 import { GoThreeBars } from 'react-icons/go';
 import styled from 'styled-components';
 
-
 const links = ['Home', 'About Us', 'Courses', 'Testimonial', 'Community', 'Enroll now',]
 
 function Header() {
@@ -14,7 +13,7 @@ function Header() {
             <Links>
                 {
                     links.map((item, index) => (
-                        <a href="" key={index} style={
+                        <a href={`#${item}`} key={index} style={
                             index == 5 ? ButtonStyle : index == 0 ? {
                                 color: 'white'
                             } : {}
