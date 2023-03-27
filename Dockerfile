@@ -1,35 +1,21 @@
-# Stage 1: Build the Next.js app
-FROM node:16-alpine AS builder
+# Use an official Node.js runtime as a parent image
+FROM node:16-alpine3.11
 
-# Set the working directory
+# Set the working directory to /app
 WORKDIR /app
 
-# Copy the package.json and package-lock.json files
-COPY package*.json ./
+# Copy the current directory contents into the container at /app
+COPY . /app
 
 # Install dependencies
-RUN npm i
+RUN npm install
 
-# Copy the rest of the application code
-COPY . .
-
-# Build the app
+# Build the Next.js app
 RUN npm run build
 
-# Stage 2: Serve the Next.js app using a lightweight Node.js image
-FROM node:16-alpine
 
-# Set the working directory
-WORKDIR /app
+# Expose port 3000 for the application
+EXPOSE 3000
 
-# Copy the package.json and package-lock.json files
-COPY package*.json ./
-
-# Install only production dependencies
-RUN npm i --production
-
-# Copy the Next.js build files from the builder stage
-COPY --from=builder /app/.next ./.next
-
-# Start the app
+# Start the server
 CMD ["npm", "start"]

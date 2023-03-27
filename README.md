@@ -6,7 +6,7 @@ The Dockerfile uses a multi-stage build to first build the Next.js app in one im
 
 Before you begin, ensure that you have the following installed on your local machine:
 
-- [Link Text](https://www.docker.com/products/docker-desktop)
+- [Docker](https://www.docker.com/products/docker-desktop)
 
 ## Usage
 
@@ -25,7 +25,7 @@ This will build the Docker image using the Dockerfile in the current directory a
 - Once the build is complete, you can run the Docker container using the following command:
 
 ```bash
-docker run --rm -it -p 3000:3000 techtime
+docker run 3000:3000 techtime
 ```
 
 This command runs a Docker container using the "techtime" image and performs the following actions:
