@@ -1,5 +1,7 @@
 import React from 'react';
+import { GoThreeBars } from 'react-icons/go';
 import styled from 'styled-components';
+
 
 const links = ['Home', 'About Us', 'Courses', 'Testimonial', 'Community', 'Enroll now',]
 
@@ -19,7 +21,9 @@ function Header() {
                         }>{item}</a>
                     ))
                 }
-
+                <div className="navbar">
+                    <GoThreeBars size={24} color="white" />
+                </div>
             </Links>
         </Container>
     )
@@ -33,6 +37,11 @@ justify-content: space-between;
 align-items: center;
 padding-block: 2rem;
 padding-inline: 7.5rem;
+@media screen and (max-width: 1023px) {
+       padding-inline: 1rem;
+       padding-top: 2.656rem;
+       padding-bottom: 1.406rem;
+    }
 `
 const Logo = styled.section`
 width: 20%;
@@ -45,6 +54,9 @@ h1{
     font-size: 2.2rem;
     font-family: 'Amazing Kids';
     color: white;
+    @media screen and (max-width: 1023px) {
+        font-size: 1.198rem;
+    }
 }
 `
 const Links = styled.section`
@@ -60,6 +72,15 @@ a{
     font-weight: 700;
     text-align: center;
     white-space: nowrap;
+    @media screen and (max-width: 1023px) {
+       display: none;
+    }
+}
+.navbar{
+    display: none;
+    @media screen and (max-width: 1023px) {
+       display: flex;
+    }   
 }
 
 `

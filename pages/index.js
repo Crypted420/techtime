@@ -7,6 +7,7 @@ import Courses from './components/Courses';
 import Community from './components/Community';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
+import Testimonial from './components/Testimonial';
 export default function Home() {
   return (
     <div style={{
@@ -22,6 +23,7 @@ export default function Home() {
       <HighQuality />
       <Portfoliio />
       <Courses />
+      <Testimonial />
       <Community />
       <FAQ />
       <Footer />

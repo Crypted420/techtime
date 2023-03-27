@@ -4,7 +4,6 @@ import styled from 'styled-components'
 function Brand() {
     return (
         <Container>
-            {/* <img src="/images/brands.svg" alt="" /> */}
             <div></div>
         </Container>
     )
@@ -17,17 +16,18 @@ const Container = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-inline: 7.5rem;
+    @media screen and (max-width: 1023px) {
+        height: 3.75rem;
+        padding-inline: 1rem;
+    }
     div{
-        width: 70%;
+        width: 100%;
         height: 100%;
         background-image: url("/images/brands.svg");
         background-repeat: no-repeat;
         background-size: contain; 
         background-position: center;
-    }
-    img{
-        width: 100%;
-        height: 100%;
     }
 `
 
